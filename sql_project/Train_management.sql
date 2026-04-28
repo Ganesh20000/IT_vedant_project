@@ -773,7 +773,6 @@ FROM passenger p
 JOIN ticket t ON p.passenger_id = t.passenger_id
 GROUP BY p.passenger_id, p.name
 HAVING COUNT(t.ticket_id) > 3;
-
 select * from ticket; 
 
 -- - Find the total fare collected from tickets for each train.
@@ -795,5 +794,8 @@ group by s.station_id,s.station_name
 HAVING count(t.ticket_id)>1;
 
 
-
+use project;
 select * from station;
+
+use salesdb;
+select * from ipl;
