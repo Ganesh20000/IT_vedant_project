@@ -799,3 +799,9 @@ select * from station;
 
 use salesdb;
 select * from ipl;
+
+use project;
+
+use salesdb;
+
+select * from ipl;
